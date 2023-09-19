@@ -6,7 +6,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     "idimitrov-dev" = {
-      url = "git+ssh://git@gitlab.com:ivandimitrov8080/idimitrov.dev.git";
+      url = "git+ssh://git@gitlab.com/ivandimitrov8080/idimitrov.dev.git";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
@@ -23,7 +23,7 @@
           system = "x86_64-linux";
           modules = [
             simple-nixos-mailserver.nixosModule
-            idimitrov-dev
+            idimitrov-dev.nixosModules.x86_64-linux.default
             ./mailserver
           ];
         };

@@ -1,0 +1,187 @@
+{
+  "nodes": {
+    "blobs": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1604995301,
+        "narHash": "sha256-wcLzgLec6SGJA8fx1OEN1yV/Py5b+U5iyYpksUY/yLw=",
+        "owner": "simple-nixos-mailserver",
+        "repo": "blobs",
+        "rev": "2cccdf1ca48316f2cfd1c9a0017e8de5a7156265",
+        "type": "gitlab"
+      },
+      "original": {
+        "owner": "simple-nixos-mailserver",
+        "repo": "blobs",
+        "type": "gitlab"
+      }
+    },
+    "flake-compat": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1668681692,
+        "narHash": "sha256-Ht91NGdewz8IQLtWZ9LCeNXMSXHUss+9COoqu6JLmXU=",
+        "owner": "edolstra",
+        "repo": "flake-compat",
+        "rev": "009399224d5e398d03b22badca40a37ac85412a1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "edolstra",
+        "repo": "flake-compat",
+        "type": "github"
+      }
+    },
+    "flake-utils": {
+      "inputs": {
+        "systems": [
+          "idimitrov-dev",
+          "systems"
+        ]
+      },
+      "locked": {
+        "lastModified": 1694529238,
+        "narHash": "sha256-zsNZZGTGnMOf9YpHKJqMSsa0dXbfmxeoJ7xHlrt+xmY=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "ff7b65b44d01cf9ba6a71320833626af21126384",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "idimitrov-dev": {
+      "inputs": {
+        "flake-utils": "flake-utils",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "systems": "systems"
+      },
+      "locked": {
+        "lastModified": 1695141374,
+        "narHash": "sha256-BgUELqnj4PU1ITuUWcW8gm2XhWaFTNvibeYBshzneaI=",
+        "ref": "refs/heads/master",
+        "rev": "7246dcd67eb881a43bfd318c912d1ba6146a2d8d",
+        "revCount": 43,
+        "type": "git",
+        "url": "ssh://git@gitlab.com/ivandimitrov8080/idimitrov.dev.git"
+      },
+      "original": {
+        "type": "git",
+        "url": "ssh://git@gitlab.com/ivandimitrov8080/idimitrov.dev.git"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1694948089,
+        "narHash": "sha256-d2B282GmQ9o8klc22/Rbbbj6r99EnELQpOQjWMyv0rU=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "5148520bfab61f99fd25fb9ff7bfbb50dad3c9db",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "nixpkgs-22_11": {
+      "locked": {
+        "lastModified": 1669558522,
+        "narHash": "sha256-yqxn+wOiPqe6cxzOo4leeJOp1bXE/fjPEi/3F/bBHv8=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "ce5fe99df1f15a09a91a86be9738d68fadfbad82",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "ref": "nixos-22.11",
+        "type": "indirect"
+      }
+    },
+    "nixpkgs-23_05": {
+      "locked": {
+        "lastModified": 1684782344,
+        "narHash": "sha256-SHN8hPYYSX0thDrMLMWPWYulK3YFgASOrCsIL3AJ78g=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "8966c43feba2c701ed624302b6a935f97bcbdf88",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "ref": "nixos-23.05",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "idimitrov-dev": "idimitrov-dev",
+        "nixpkgs": "nixpkgs",
+        "simple-nixos-mailserver": "simple-nixos-mailserver"
+      }
+    },
+    "simple-nixos-mailserver": {
+      "inputs": {
+        "blobs": "blobs",
+        "flake-compat": "flake-compat",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "nixpkgs-22_11": "nixpkgs-22_11",
+        "nixpkgs-23_05": "nixpkgs-23_05",
+        "utils": "utils"
+      },
+      "locked": {
+        "lastModified": 1689976554,
+        "narHash": "sha256-uWJq3sIhkqfzPmfB2RWd5XFVooGFfSuJH9ER/r302xQ=",
+        "owner": "simple-nixos-mailserver",
+        "repo": "nixos-mailserver",
+        "rev": "c63f6e7b053c18325194ff0e274dba44e8d2271e",
+        "type": "gitlab"
+      },
+      "original": {
+        "owner": "simple-nixos-mailserver",
+        "repo": "nixos-mailserver",
+        "type": "gitlab"
+      }
+    },
+    "systems": {
+      "locked": {
+        "lastModified": 1680978846,
+        "narHash": "sha256-Gtqg8b/v49BFDpDetjclCYXm8mAnTrUzR0JnE2nv5aw=",
+        "owner": "nix-systems",
+        "repo": "x86_64-linux",
+        "rev": "2ecfcac5e15790ba6ce360ceccddb15ad16d08a8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-systems",
+        "repo": "x86_64-linux",
+        "type": "github"
+      }
+    },
+    "utils": {
+      "locked": {
+        "lastModified": 1605370193,
+        "narHash": "sha256-YyMTf3URDL/otKdKgtoMChu4vfVL3vCMkRqpGifhUn0=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "5021eac20303a61fafe17224c087f5519baed54d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

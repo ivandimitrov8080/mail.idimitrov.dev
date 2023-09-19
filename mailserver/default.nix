@@ -46,6 +46,6 @@
   };
 
   environment = {
-    systemPackages = with pkgs; [ coreutils-full fd git vim mlocate busybox ];
+    systemPackages = with pkgs; [ coreutils-full fd git vim mlocate busybox bash ];
   };
 }

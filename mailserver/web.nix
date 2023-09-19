@@ -51,15 +51,8 @@
     allowedTCPPorts = [ 80 443 ];
   };
 
-  systemd.services = {
-    "idimitrov.dev" = {
-      description = "My personal website";
-      wantedBy = [ "multi-user.target" ];
-      serviceConfig = {
-        ExecStart = "${idimitrov-dev}/bin/idimitrov.dev";
-        Restart = "always";
-      };
-    };
+  idimitrov-dev = {
+    enable = true;
   };
 
 }
