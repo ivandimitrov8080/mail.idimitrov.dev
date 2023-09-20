@@ -109,20 +109,6 @@
         "type": "gitlab"
       }
     },
-    "systems": {
-      "locked": {
-        "lastModified": 1681028828,
-        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
-        "owner": "nix-systems",
-        "repo": "default",
-        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
-        "type": "github"
-      },
-      "original": {
-        "id": "systems",
-        "type": "indirect"
-      }
-    },
     "utils": {
       "locked": {
         "lastModified": 1605370193,
@@ -157,15 +143,14 @@
       "inputs": {
         "nixpkgs": [
           "nixpkgs"
-        ],
-        "systems": "systems"
+        ]
       },
       "locked": {
-        "lastModified": 1695208905,
-        "narHash": "sha256-+bpNMcfc4Zc3/IUzCupoNRBMJcovFyCkD56sDIDlQaU=",
+        "lastModified": 1695222823,
+        "narHash": "sha256-QrZwDBfMJOAwjFODNGbDTPbHFn6udfIR2+GBpvoKjsU=",
         "owner": "ivandimitrov8080",
         "repo": "idimitrov.dev",
-        "rev": "903f3a5a9b0dd530f648dc1731af5b42c88d5bbc",
+        "rev": "25d84fc2713244232f00446084ce916e54523724",
         "type": "github"
       },
       "original": {
