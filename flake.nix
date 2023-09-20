@@ -5,17 +5,14 @@
       url = "gitlab:simple-nixos-mailserver/nixos-mailserver";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    "idimitrov-dev" = {
-      url = "git+ssh://git@gitlab.com/ivandimitrov8080/idimitrov.dev.git";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    vpsadminos.url = "github:vpsfreecz/vpsadminos";
   };
 
   outputs =
     { self
     , nixpkgs
     , simple-nixos-mailserver
-    , idimitrov-dev
+    , vpsadminos
     , ...
     }: {
       nixosConfigurations = {
@@ -23,7 +20,7 @@
           system = "x86_64-linux";
           modules = [
             simple-nixos-mailserver.nixosModule
-            idimitrov-dev.nixosModules.x86_64-linux.default
+            vpsadminos.nixosConfigurations.container
             ./mailserver
           ];
         };

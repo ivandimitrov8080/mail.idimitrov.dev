@@ -1,9 +1,5 @@
 { config, pkgs, ... }:
 {
-  imports = [
-    ./vpsadminos.nix
-  ];
-
   services.openssh.enable = true;
   services.openssh.settings.PermitRootLogin = "yes";
   #users.extraUsers.root.openssh.authorizedKeys.keys =

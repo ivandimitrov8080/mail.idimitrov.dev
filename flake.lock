@@ -32,49 +32,6 @@
         "type": "github"
       }
     },
-    "flake-utils": {
-      "inputs": {
-        "systems": [
-          "idimitrov-dev",
-          "systems"
-        ]
-      },
-      "locked": {
-        "lastModified": 1694529238,
-        "narHash": "sha256-zsNZZGTGnMOf9YpHKJqMSsa0dXbfmxeoJ7xHlrt+xmY=",
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "rev": "ff7b65b44d01cf9ba6a71320833626af21126384",
-        "type": "github"
-      },
-      "original": {
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "type": "github"
-      }
-    },
-    "idimitrov-dev": {
-      "inputs": {
-        "flake-utils": "flake-utils",
-        "nixpkgs": [
-          "nixpkgs"
-        ],
-        "systems": "systems"
-      },
-      "locked": {
-        "lastModified": 1695141374,
-        "narHash": "sha256-BgUELqnj4PU1ITuUWcW8gm2XhWaFTNvibeYBshzneaI=",
-        "ref": "refs/heads/master",
-        "rev": "7246dcd67eb881a43bfd318c912d1ba6146a2d8d",
-        "revCount": 43,
-        "type": "git",
-        "url": "ssh://git@gitlab.com/ivandimitrov8080/idimitrov.dev.git"
-      },
-      "original": {
-        "type": "git",
-        "url": "ssh://git@gitlab.com/ivandimitrov8080/idimitrov.dev.git"
-      }
-    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1694948089,
@@ -121,9 +78,9 @@
     },
     "root": {
       "inputs": {
-        "idimitrov-dev": "idimitrov-dev",
         "nixpkgs": "nixpkgs",
-        "simple-nixos-mailserver": "simple-nixos-mailserver"
+        "simple-nixos-mailserver": "simple-nixos-mailserver",
+        "vpsadminos": "vpsadminos"
       }
     },
     "simple-nixos-mailserver": {
@@ -151,21 +108,6 @@
         "type": "gitlab"
       }
     },
-    "systems": {
-      "locked": {
-        "lastModified": 1680978846,
-        "narHash": "sha256-Gtqg8b/v49BFDpDetjclCYXm8mAnTrUzR0JnE2nv5aw=",
-        "owner": "nix-systems",
-        "repo": "x86_64-linux",
-        "rev": "2ecfcac5e15790ba6ce360ceccddb15ad16d08a8",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nix-systems",
-        "repo": "x86_64-linux",
-        "type": "github"
-      }
-    },
     "utils": {
       "locked": {
         "lastModified": 1605370193,
@@ -178,6 +120,21 @@
       "original": {
         "owner": "numtide",
         "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "vpsadminos": {
+      "locked": {
+        "lastModified": 1695118083,
+        "narHash": "sha256-3QCCbdELfwJSQesI5UCAjYXsmolRbnTVoviE5t/IE5M=",
+        "owner": "vpsfreecz",
+        "repo": "vpsadminos",
+        "rev": "4f35e4859adb98f67ccbcb261b92ae635c004039",
+        "type": "github"
+      },
+      "original": {
+        "owner": "vpsfreecz",
+        "repo": "vpsadminos",
         "type": "github"
       }
     }

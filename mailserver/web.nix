@@ -51,8 +51,4 @@
     allowedTCPPorts = [ 80 443 ];
   };
 
-  idimitrov-dev = {
-    enable = true;
-  };
-
 }
