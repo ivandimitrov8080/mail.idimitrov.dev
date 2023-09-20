@@ -6,6 +6,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     vpsadminos.url = "github:vpsfreecz/vpsadminos";
+    webshite = {
+      url = "github:ivandimitrov8080/idimitrov.dev";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -13,6 +17,7 @@
     , nixpkgs
     , simple-nixos-mailserver
     , vpsadminos
+    , webshite
     , ...
     }: {
       nixosConfigurations = {
@@ -21,6 +26,7 @@
           modules = [
             simple-nixos-mailserver.nixosModule
             vpsadminos.nixosConfigurations.container
+            webshite.nixosModules.default
             ./mailserver
           ];
         };

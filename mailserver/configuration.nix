@@ -1,5 +1,8 @@
 { config, pkgs, ... }:
 {
+
+  website.enable = true;
+  mailserver.enable = true;
   services.openssh.enable = true;
   services.openssh.settings.PermitRootLogin = "yes";
   #users.extraUsers.root.openssh.authorizedKeys.keys =

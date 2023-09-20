@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 {
 
-  imports = [ ./configuration.nix ./web.nix ];
+  imports = [ ./configuration.nix ];
 
   nix = {
     extraOptions = ''
@@ -10,7 +10,6 @@
   };
 
   mailserver = {
-    enable = true;
     fqdn = "mail.idimitrov.dev";
     domains = [ "idimitrov.dev" "mail.idimitrov.dev" ];
 
