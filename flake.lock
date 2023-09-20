@@ -161,11 +161,11 @@
         "systems": "systems"
       },
       "locked": {
-        "lastModified": 1695208109,
-        "narHash": "sha256-SlkxioYOVSyVJRmrgGaR2xuZOzVn6y+RMoXjiaMASAI=",
+        "lastModified": 1695208905,
+        "narHash": "sha256-+bpNMcfc4Zc3/IUzCupoNRBMJcovFyCkD56sDIDlQaU=",
         "owner": "ivandimitrov8080",
         "repo": "idimitrov.dev",
-        "rev": "bec7862f632db84d4ee279157a4d0e8b7288c45c",
+        "rev": "903f3a5a9b0dd530f648dc1731af5b42c88d5bbc",
         "type": "github"
       },
       "original": {
