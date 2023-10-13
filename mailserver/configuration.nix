@@ -1,16 +1,27 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 {
 
   website.enable = true;
   mailserver.enable = true;
-  services.openssh.enable = true;
-  services.openssh.settings.PermitRootLogin = "yes";
+  services = {
+    openssh = {
+      enable = true;
+      settings = {
+        PermitRootLogin = "prohibit-password";
+      };
+    };
+  };
   #users.extraUsers.root.openssh.authorizedKeys.keys =
   #  [ "..." ];
 
-  systemd.extraConfig = ''
-    DefaultTimeoutStartSec=900s
-  '';
+  systemd = {
+    services = {
+      "serial-getty@ttyS0".enable = lib.mkForce false;
+    };
+    extraConfig = ''
+      DefaultTimeoutStartSec=900s
+    '';
+  };
 
   time.timeZone = "Europe/Amsterdam";
 
