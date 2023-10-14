@@ -1,6 +1,5 @@
 { config, pkgs, lib, ... }:
 {
-
   website.enable = true;
   mailserver.enable = true;
   services = {
@@ -11,9 +10,6 @@
       };
     };
   };
-  #users.extraUsers.root.openssh.authorizedKeys.keys =
-  #  [ "..." ];
-
   systemd = {
     services = {
       "serial-getty@ttyS0".enable = lib.mkForce false;
@@ -22,8 +18,6 @@
       DefaultTimeoutStartSec=900s
     '';
   };
-
-  time.timeZone = "Europe/Amsterdam";
-
-  system.stateVersion = "23.05";
+  time.timeZone = "Europe/Sofia";
+  system.stateVersion = "23.11";
 }
