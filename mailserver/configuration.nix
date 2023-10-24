@@ -9,6 +9,16 @@
         PermitRootLogin = "prohibit-password";
       };
     };
+    minetest-server = {
+      enable = true;
+      port = 30000;
+      gameId = "mineclone2";
+    };
+  };
+  networking.firewall = {
+    enable = true;
+    allowedTCPPorts = [ 30000 ];
+    allowedUDPPorts = [ 30000 ];
   };
   systemd = {
     services = {
