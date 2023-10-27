@@ -26,8 +26,21 @@
     certificateScheme = "acme-nginx";
     hierarchySeparator = "/";
   };
-  security.acme.acceptTerms = true;
-  security.acme.defaults.email = "security@idimitrov.dev";
+
+  security = {
+    acme = {
+      acceptTerms = true;
+      defaults.email = "security@idimitrov.dev";
+      certs = {
+        "mail.idimitrov.dev" = {
+          listenHTTP = ":80";
+        };
+        "idimitrov.dev" = {
+          listenHTTP = ":80";
+        };
+      };
+    };
+  };
 
   users = {
     users.ivand = {
