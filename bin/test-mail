@@ -1,6 +1,13 @@
 #!/usr/bin/env bash
 
-mail="
+
+name="Ivan Dimitrov"
+from="ivan@idimitrov.dev"
+rand="$(tr -dc A-Za-z0-9 </dev/urandom | head -c 13 ; echo '')"
+to="test-$rand@srv1.mail-tester.com"
+
+mail="From: $from
+To: $to
 Subject: Invitation to Our Upcoming Tech Symposium
 
 List-Unsubscribe: <mailto:unsubscribe@example.com>
@@ -32,12 +39,7 @@ jane.smith@example.com
 P.S. If you wish to stop receiving these emails, you can unsubscribe by replying with 'UNSUBSCRIBE' in the subject line.
 "
 
-name="Ivan Dimitrov"
-from="ivan@idimitrov.dev"
-rand="$(tr -dc A-Za-z0-9 </dev/urandom | head -c 13 ; echo '')"
-to="test-$rand.srv1.mail-tester.com"
-
-sendmail -F "$name" -f "$from" "$to" < "$mail"
+echo "$mail" | sendmail -t -F "$name" -f "$from"
 
 echo "https://mail-tester.com/test-$rand"
 
