@@ -31,14 +31,6 @@
     acme = {
       acceptTerms = true;
       defaults.email = "security@idimitrov.dev";
-      certs = {
-        "mail.idimitrov.dev" = {
-          listenHTTP = ":80";
-        };
-        "idimitrov.dev" = {
-          listenHTTP = ":80";
-        };
-      };
     };
   };
 
