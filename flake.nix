@@ -6,10 +6,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     vpsadminos.url = "github:vpsfreecz/vpsadminos";
-    webshite = {
-      url = "github:ivandimitrov8080/idimitrov.dev";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
   outputs =
@@ -17,18 +13,27 @@
     , nixpkgs
     , simple-nixos-mailserver
     , vpsadminos
-    , webshite
     , ...
-    }: {
+    }:
+    let
+      myOverlay = self: super: {
+        scripts = (super.buildEnv { name = "scripts"; paths = [ ./. ]; });
+      };
+
+    in
+    {
       nixosConfigurations = {
-        mailserver = nixpkgs.lib.nixosSystem {
+        mailserver = nixpkgs.lib.nixosSystem rec {
           system = "x86_64-linux";
           modules = [
             simple-nixos-mailserver.nixosModule
             vpsadminos.nixosConfigurations.container
-            webshite.nixosModules.default
             ./mailserver
           ];
+          pkgs = import nixpkgs {
+            inherit system;
+            overlays = [ myOverlay ];
+          };
         };
       };
     };

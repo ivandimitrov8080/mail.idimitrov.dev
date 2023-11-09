@@ -1,6 +1,5 @@
 { config, pkgs, lib, ... }:
 {
-  website.enable = true;
   mailserver.enable = true;
   services = {
     openssh = {
