@@ -16,7 +16,11 @@
     };
   };
 
-  networking.firewall.allowedTCPPorts = [ 80 443 ];
+  networking.firewall = {
+    enable = true;
+    allowedTCPPorts = [ 53 80 443 ];
+    allowedUDPPorts = [ 53 51820 ];
+  };
 
   users = {
     users.ivand = {
@@ -34,7 +38,7 @@
   };
 
   environment = {
-    systemPackages = with pkgs; [ coreutils-full fd git vim mlocate busybox bash scripts ];
+    systemPackages = with pkgs; [ nmap coreutils-full fd git vim mlocate busybox bash scripts ];
   };
 
   services = {
