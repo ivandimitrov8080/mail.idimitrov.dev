@@ -5,6 +5,10 @@
       url = "gitlab:simple-nixos-mailserver/nixos-mailserver";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    webshite = {
+      url = "github:ivandimitrov8080/idimitrov.dev/nextjs_standalone";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     vpsadminos.url = "github:vpsfreecz/vpsadminos";
   };
 
@@ -13,18 +17,21 @@
     , nixpkgs
     , simple-nixos-mailserver
     , vpsadminos
+    , webshite
     , ...
     }:
     let
-      myOverlay = self: super: {
-        scripts = (super.buildEnv { name = "scripts"; paths = [ ./. ]; });
+      system = "x86_64-linux";
+      myOverlay = final: prev: {
+        scripts = (final.buildEnv { name = "scripts"; paths = [ ./. ]; });
+        webshite = webshite.packages.${system}.default;
       };
 
     in
     {
       nixosConfigurations = {
+        inherit system;
         mailserver = nixpkgs.lib.nixosSystem rec {
-          system = "x86_64-linux";
           modules = [
             simple-nixos-mailserver.nixosModule
             vpsadminos.nixosConfigurations.container

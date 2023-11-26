@@ -14,6 +14,5 @@
         $config['smtp_pass'] = "%p";
       '';
     };
-    nginx.enable = true;
   };
 }
