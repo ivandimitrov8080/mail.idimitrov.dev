@@ -7,12 +7,7 @@
       ensureUsers = [
         {
           name = "roundcube";
-          ensurePermissions = {
-            "DATABASE \"roundcube\"" = "ALL PRIVILEGES";
-            "ALL TABLES IN SCHEMA public" = "ALL PRIVILEGES";
-            "ALL SEQUENCES IN SCHEMA public" = "ALL PRIVILEGES";
-            "SCHEMA public" = "ALL PRIVILEGES";
-          };
+          ensureDBOwnership = true;
         }
         {
           name = "root";
