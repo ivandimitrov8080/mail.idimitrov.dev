@@ -16,11 +16,20 @@
         add_header 'Referrer-Policy' 'origin-when-cross-origin';
         add_header X-Content-Type-Options nosniff;
       '';
-      virtualHosts."idimitrov.dev" = {
-        enableACME = true;
-        forceSSL = true;
-        locations."/" = {
-          proxyPass = "http://127.0.0.1:3000";
+      virtualHosts = {
+        "idimitrov.dev" = {
+          enableACME = true;
+          forceSSL = true;
+          locations."/" = {
+            proxyPass = "http://127.0.0.1:3000";
+          };
+        };
+        "www.idimitrov.dev" = {
+          enableACME = true;
+          forceSSL = true;
+          locations."/" = {
+            proxyPass = "http://127.0.0.1:3000";
+          };
         };
       };
     };
