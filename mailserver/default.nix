@@ -1,4 +1,4 @@
 { config, pkgs, ... }:
 {
-  imports = [ ./configuration.nix ./mailserver ./roundcube ./postgres ./wireguard ./nginx ./webshite ];
+  imports = [ ./configuration.nix ./mailserver ./roundcube ./postgres ./wireguard ./nginx ./webshite ./tor ];
 }
