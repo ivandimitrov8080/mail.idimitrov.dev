@@ -15,6 +15,7 @@
         add_header Strict-Transport-Security $hsts_header;
         add_header 'Referrer-Policy' 'origin-when-cross-origin';
         add_header X-Content-Type-Options nosniff;
+        add_header Onion-Location http://sxfx23zafag4lixkb4s6zwih7ga5jnzfgtgykcerd354bvb6u7alnkid.onion;
       '';
       virtualHosts = {
         "idimitrov.dev" = {
