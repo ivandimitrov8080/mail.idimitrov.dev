@@ -453,11 +453,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1702807104,
-        "narHash": "sha256-5xrQKjgUwoR2nIemmiPQi2Kgi3VR6bRiZfsln35PVFg=",
+        "lastModified": 1702816410,
+        "narHash": "sha256-KyVaOzc9ALaDfY5V2GOBvdyvHUs+Kh+XZTeLK2jXwjc=",
         "ref": "refs/heads/nextjs",
-        "rev": "a6a4c73900fcf1f1a76f0535bd9bd940c5072115",
-        "revCount": 62,
+        "rev": "1c811461b7ba193148206da23f79683a3478362a",
+        "revCount": 63,
         "type": "git",
         "url": "https://git.idimitrov.dev/ivan/idimitrov.dev"
       },
