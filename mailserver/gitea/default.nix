@@ -12,6 +12,9 @@
         ROOT_URL = "https://git.idimitrov.dev/";
         HTTP_PORT = 3001;
       };
+      repository = {
+        DEFAULT_BRANCH = "master";
+      };
     };
   };
 }
