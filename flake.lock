@@ -181,11 +181,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1702539185,
-        "narHash": "sha256-KnIRG5NMdLIpEkZTnN5zovNYc0hhXjAgv6pfd5Z4c7U=",
+        "lastModified": 1702938738,
+        "narHash": "sha256-O7Vb0xC9s4Dmgxj8APEpuuMj7HsLgPbpy1UKvNVJp7o=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "aa9d4729cbc99dabacb50e3994dcefb3ea0f7447",
+        "rev": "dd8e82f3b4017b8faa52c2b1897a38d53c3c26cb",
         "type": "github"
       },
       "original": {
@@ -432,11 +432,11 @@
     },
     "vpsadminos": {
       "locked": {
-        "lastModified": 1702398086,
-        "narHash": "sha256-TbQ94MAmt6XkRPcjf/qdUoh6w2KDv4Vr2EQeZyn6gWU=",
+        "lastModified": 1703007340,
+        "narHash": "sha256-yPD5VHCrXeQPB3OKzVzyCTBO6BQ3+4wL8Rq2FH1NpfY=",
         "owner": "vpsfreecz",
         "repo": "vpsadminos",
-        "rev": "3957923fdfbb9e7d6d4573aac4475fc5317e6859",
+        "rev": "294f58cc883c0de7c94612c625f2c472935c8c56",
         "type": "github"
       },
       "original": {
@@ -453,11 +453,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1702839478,
-        "narHash": "sha256-8FGJNx8pl+S/eGoRCvBj65UCwP9QqRM5r6jmk1McIkc=",
+        "lastModified": 1703051538,
+        "narHash": "sha256-aa9hWB3xWBZrieCDhO/QO30N5CIjb0/bok+2MMsb8WQ=",
         "ref": "refs/heads/nextjs",
-        "rev": "dcdd8ab48376c3afcff714f35ef40142cd619ac3",
-        "revCount": 64,
+        "rev": "bcca288b583e4d39f6d80eec8c46f501144da666",
+        "revCount": 65,
         "type": "git",
         "url": "https://git.idimitrov.dev/ivan/idimitrov.dev"
       },
