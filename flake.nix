@@ -6,7 +6,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     webshite = {
-      url = "git+https://git.idimitrov.dev/ivan/idimitrov.dev";
+      url = "git+https://src.idimitrov.dev/ivan/idimitrov.dev";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     vpsadminos.url = "github:vpsfreecz/vpsadminos";
