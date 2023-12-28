@@ -32,7 +32,7 @@
             proxyPass = "http://127.0.0.1:3000";
           };
         };
-        "git.idimitrov.dev" = {
+        "src.idimitrov.dev" = {
           enableACME = true;
           forceSSL = true;
           locations."/" = {
