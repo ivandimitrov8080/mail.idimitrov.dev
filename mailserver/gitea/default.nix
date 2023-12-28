@@ -8,8 +8,8 @@
     };
     settings = {
       server = {
-        DOMAIN = "git.idimitrov.dev";
-        ROOT_URL = "https://git.idimitrov.dev/";
+        DOMAIN = "src.idimitrov.dev";
+        ROOT_URL = "https://src.idimitrov.dev/";
         HTTP_PORT = 3001;
       };
       repository = {
