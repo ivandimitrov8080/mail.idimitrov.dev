@@ -29,6 +29,10 @@
           publicKey = "28yXYLk4U0r6MdWFEZzk6apI8uhg962wMprF47wUJyI=";
           allowedIPs = [ "10.0.0.2/32" "fdc9:281f:04d7:9ee9::2/128" ];
         }
+        {
+          publicKey = "butSulXFpgKK045tH/V4wjYSPDGFGtu71kydRmObPQg=";
+          allowedIPs = [ "10.0.0.3/32" ];
+        }
       ];
     };
   };
