@@ -16,4 +16,5 @@
     certificateScheme = "acme-nginx";
     hierarchySeparator = "/";
   };
+  services.dovecot2.sieve.extensions = [ "fileinto" ];
 }
