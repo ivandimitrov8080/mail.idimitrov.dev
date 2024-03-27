@@ -30,7 +30,7 @@
           allowedIPs = [ "10.0.0.2/32" "fdc9:281f:04d7:9ee9::2/128" ];
         }
         {
-          publicKey = "butSulXFpgKK045tH/V4wjYSPDGFGtu71kydRmObPQg=";
+          publicKey = "RqTsFxFCcgYsytcDr+jfEoOA5UNxa1ZzGlpx6iuTpXY=";
           allowedIPs = [ "10.0.0.3/32" ];
         }
       ];
