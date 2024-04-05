@@ -38,8 +38,8 @@
         inherit system;
         mailserver = nixpkgs.lib.nixosSystem rec {
           modules = [
-            simple-nixos-mailserver.nixosModule
             vpsadminos.nixosConfigurations.container
+            simple-nixos-mailserver.nixosModule
             hosts.nixosModule
             ./mailserver
           ];
