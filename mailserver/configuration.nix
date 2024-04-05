@@ -16,10 +16,17 @@
     };
   };
 
-  networking.firewall = {
-    enable = true;
-    allowedTCPPorts = [ 53 80 443 ];
-    allowedUDPPorts = [ 53 51820 ];
+  networking = {
+    firewall = {
+      enable = true;
+      allowedTCPPorts = [ 53 80 443 ];
+      allowedUDPPorts = [ 53 51820 ];
+    };
+    stevenBlackHosts = {
+      enable = true;
+      blockFakenews = true;
+      blockGambling = true;
+    };
   };
 
   users = {

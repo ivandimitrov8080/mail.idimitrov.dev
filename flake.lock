@@ -158,6 +158,26 @@
         "type": "github"
       }
     },
+    "hosts": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1712248646,
+        "narHash": "sha256-pEiprVaO6CmIJ1qJMQn/y8vHvRQwiQq7CwbhzlneCOA=",
+        "owner": "StevenBlack",
+        "repo": "hosts",
+        "rev": "a340ebf0b8e9f81476c0ec0b6a9767858aea325c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "StevenBlack",
+        "repo": "hosts",
+        "type": "github"
+      }
+    },
     "ide": {
       "inputs": {
         "flake-utils": "flake-utils",
@@ -277,6 +297,7 @@
     },
     "root": {
       "inputs": {
+        "hosts": "hosts",
         "nixpkgs": "nixpkgs",
         "simple-nixos-mailserver": "simple-nixos-mailserver",
         "vpsadminos": "vpsadminos",

@@ -10,6 +10,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     vpsadminos.url = "github:vpsfreecz/vpsadminos";
+    hosts = {
+      url = "github:StevenBlack/hosts";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -18,6 +22,7 @@
     , simple-nixos-mailserver
     , vpsadminos
     , webshite
+    , hosts
     , ...
     }:
     let
@@ -35,6 +40,7 @@
           modules = [
             simple-nixos-mailserver.nixosModule
             vpsadminos.nixosConfigurations.container
+            hosts.nixosModule
             ./mailserver
           ];
           pkgs = import nixpkgs {
