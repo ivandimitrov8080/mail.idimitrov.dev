@@ -56,4 +56,23 @@
       };
     };
   };
+  systemd = {
+    timers = {
+      bingwp = {
+        wantedBy = [ "timers.target" ];
+        timerConfig = {
+          OnCalendar = "*-*-* 10:00:00";
+          Persistent = true;
+        };
+      };
+    };
+    services = {
+      bingwp = {
+        description = "Download bing image of the day";
+        script = ''
+          ${pkgs.nushell}/bin/nu -c "http get ('https://bing.com' + ((http get https://www.bing.com/HPImageArchive.aspx?format=js&n=1).images.0.url)) | save  ('/var/pic' | path join ( [ (date now | format date '%Y-%m-%d'), '.png' ] | str join ))"
+        '';
+      };
+    };
+  };
 }
