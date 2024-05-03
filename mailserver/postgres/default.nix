@@ -1,9 +1,9 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 {
   services = {
     postgresql = {
       enable = true;
-      ensureDatabases = [ "roundcube" "gitea" ];
+      ensureDatabases = [ "root" "roundcube" "gitea" ];
       ensureUsers = [
         {
           name = "roundcube";
@@ -15,6 +15,7 @@
         }
         {
           name = "root";
+          ensureDBOwnership = true;
           ensureClauses = {
             superuser = true;
             createrole = true;
@@ -23,7 +24,8 @@
         }
       ];
       authentication = ''
-        local gitea all ident map=gitea-users
+        #type   database    DBuser        auth-method
+        local   gitea       all           ident         map=gitea-users
       '';
       identMap = ''
         gitea-users gitea gitea

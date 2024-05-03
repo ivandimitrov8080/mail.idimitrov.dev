@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, ... }:
 let
   webshiteConfig = ''
     add_header 'Referrer-Policy' 'origin-when-cross-origin';
@@ -40,6 +40,10 @@ in
         };
         "${config.mailserver.fqdn}" = {
           extraConfig = restrictToVpn;
+        };
+        "cms.idimitrov.dev" = {
+          enableACME = true;
+          forceSSL = true;
         };
         "src.idimitrov.dev" = {
           enableACME = true;
