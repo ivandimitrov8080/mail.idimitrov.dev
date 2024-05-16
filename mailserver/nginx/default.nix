@@ -48,16 +48,6 @@ in
             proxyPass = "http://127.0.0.1:3001";
           };
         };
-        "pic.idimitrov.dev" = {
-          enableACME = true;
-          forceSSL = true;
-          locations."/" = {
-            extraConfig = ''
-              autoindex on;
-            '';
-          };
-          root = "/var/pic";
-        };
       };
     };
   };
