@@ -1,6 +1,6 @@
-{ config, pkgs, lib, ... }:
+{ pkgs, ... }:
 {
-  time.timeZone = "Europe/Sofia";
+  time.timeZone = "Europe/Prague";
   system.stateVersion = "23.11";
 
   nix = {
