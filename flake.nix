@@ -1,6 +1,6 @@
 {
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.05";
     simple-nixos-mailserver = {
       url = "gitlab:simple-nixos-mailserver/nixos-mailserver";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -17,8 +17,7 @@
   };
 
   outputs =
-    { self
-    , nixpkgs
+    { nixpkgs
     , simple-nixos-mailserver
     , vpsadminos
     , webshite
@@ -36,7 +35,7 @@
     {
       nixosConfigurations = {
         inherit system;
-        mailserver = nixpkgs.lib.nixosSystem rec {
+        mailserver = nixpkgs.lib.nixosSystem {
           modules = [
             vpsadminos.nixosConfigurations.container
             simple-nixos-mailserver.nixosModule

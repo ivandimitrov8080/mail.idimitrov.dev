@@ -322,11 +322,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1716859594,
-        "narHash": "sha256-wllEikCX/bMY/ZyRszXvar+AzYqmAx6fcjvcDJBkzfU=",
+        "lastModified": 1717449440,
+        "narHash": "sha256-QtSCQFBhyQIsKJhOvcIOi+9EN1kEnNeoLo3PeQ5VbIY=",
         "owner": "StevenBlack",
         "repo": "hosts",
-        "rev": "6b6cba7dc79b459f80ffc44b3dd9973effdbed34",
+        "rev": "e1a7b23e9769607009d741066b5789a99aaf9923",
         "type": "github"
       },
       "original": {
@@ -437,16 +437,16 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1717196966,
-        "narHash": "sha256-yZKhxVIKd2lsbOqYd5iDoUIwsRZFqE87smE2Vzf6Ck0=",
+        "lastModified": 1717281328,
+        "narHash": "sha256-evZPzpf59oNcDUXxh2GHcxHkTEG4fjae2ytWP85jXRo=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "57610d2f8f0937f39dbd72251e9614b1561942d8",
+        "rev": "b3b2b28c1daa04fe2ae47c21bb76fd226eac4ca1",
         "type": "github"
       },
       "original": {
         "owner": "NixOS",
-        "ref": "nixos-unstable",
+        "ref": "nixos-24.05",
         "repo": "nixpkgs",
         "type": "github"
       }
@@ -531,11 +531,11 @@
         "utils": "utils"
       },
       "locked": {
-        "lastModified": 1717145612,
-        "narHash": "sha256-Jb1VAryn2UTLCM59Ph847SD8ff+fcii4i0Qem5povkI=",
+        "lastModified": 1717515088,
+        "narHash": "sha256-nWOLpPA7+k7V1OjXTuxdsVd5jeeI0b13Di57wvnqkic=",
         "owner": "simple-nixos-mailserver",
         "repo": "nixos-mailserver",
-        "rev": "46a0829aa82c5a56e6b6c24aa8d8046c52a716a4",
+        "rev": "0d51a32e4799d081f260eb4db37145f5f4ee7456",
         "type": "gitlab"
       },
       "original": {
@@ -647,11 +647,11 @@
     },
     "vpsadminos": {
       "locked": {
-        "lastModified": 1717346803,
-        "narHash": "sha256-FGlzOxBqbzkd9m8P7J4olpYFyyovKZ6uAomHRJg2a28=",
+        "lastModified": 1717573966,
+        "narHash": "sha256-HexNxrosL7s5QLDwHjPC1EbZLXLicBkPR7CLZJ98MF8=",
         "owner": "vpsfreecz",
         "repo": "vpsadminos",
-        "rev": "6a7b974362d8625dad63e46168ff383663de6a57",
+        "rev": "13f3c04e6a936c68028d452088e2041604818eac",
         "type": "github"
       },
       "original": {

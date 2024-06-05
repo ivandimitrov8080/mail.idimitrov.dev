@@ -1,8 +1,8 @@
-{ config, pkgs, ... }:
+{ ... }:
 {
   services.gitea = {
     enable = true;
-    appName = "idimitrov: Gitea";
+    appName = "src";
     database = {
       type = "postgres";
     };
