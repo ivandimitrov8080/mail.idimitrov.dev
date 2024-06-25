@@ -25,7 +25,7 @@
   networking = {
     firewall = {
       enable = true;
-      allowedTCPPorts = [ 53 80 443 ];
+      allowedTCPPorts = [ 53 80 443 18081 ];
       allowedUDPPorts = [ 53 51820 ];
     };
     stevenBlackHosts = {
