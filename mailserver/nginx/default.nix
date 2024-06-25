@@ -61,6 +61,14 @@ in
             '';
           };
         };
+        "monero.idimitrov.dev" = {
+          enableACME = true;
+          forceSSL = true;
+          extraConfig = restrictToVpn;
+          locations."/" = {
+            proxyPass = "http://127.0.0.1:18081";
+          };
+        };
       };
     };
   };
