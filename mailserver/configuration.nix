@@ -3,6 +3,12 @@
   time.timeZone = "Europe/Prague";
   system.stateVersion = "23.11";
 
+  fileSystems."/mnt/export1981" = {
+    device = "172.16.128.47:/nas/5490";
+    fsType = "nfs";
+    options = [ "nofail" ];
+  };
+
   nix = {
     extraOptions = ''
       experimental-features = nix-command flakes
