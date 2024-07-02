@@ -9,6 +9,7 @@ let
     allow 10.0.0.2/32;
     allow fdc9:281f:04d7:9ee9::2/128;
     allow 10.0.0.3/32;
+    allow 10.0.0.4/32;
     deny all;
   '';
 in
