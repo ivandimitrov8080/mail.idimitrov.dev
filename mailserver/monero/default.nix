@@ -1,6 +1,6 @@
 {
   services.monero = {
-    enable = true;
+    enable = false;
     dataDir = "/mnt/export1981/monero";
   };
 }
