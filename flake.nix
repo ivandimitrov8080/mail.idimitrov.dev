@@ -1,27 +1,20 @@
 {
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.05";
-    simple-nixos-mailserver = {
-      url = "gitlab:simple-nixos-mailserver/nixos-mailserver";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    webshite = {
-      url = "github:ivandimitrov8080/idimitrov.dev";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
     vpsadminos.url = "github:vpsfreecz/vpsadminos";
-    hosts = {
-      url = "github:StevenBlack/hosts";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    simple-nixos-mailserver = { url = "gitlab:simple-nixos-mailserver/nixos-mailserver"; inputs.nixpkgs.follows = "nixpkgs"; };
+    hosts = { url = "github:StevenBlack/hosts"; inputs.nixpkgs.follows = "nixpkgs"; };
+    webshite = { url = "github:ivandimitrov8080/idimitrov.dev"; inputs.nixpkgs.follows = "nixpkgs"; };
+    pic = { url = "github:ivandimitrov8080/pic.idimitrov.dev"; inputs.nixpkgs.follows = "nixpkgs"; };
   };
 
   outputs =
     { nixpkgs
-    , simple-nixos-mailserver
     , vpsadminos
-    , webshite
+    , simple-nixos-mailserver
     , hosts
+    , webshite
+    , pic
     , ...
     }:
     let
@@ -29,6 +22,11 @@
       myOverlay = final: prev: {
         scripts = (final.buildEnv { name = "scripts"; paths = [ ./. ]; });
         webshite = webshite.packages.${system}.default;
+        pic = pic.packages.${system}.default.overrideAttrs (prev: {
+          env = {
+            FILEPATH = "/var/pic";
+          };
+        });
       };
 
     in

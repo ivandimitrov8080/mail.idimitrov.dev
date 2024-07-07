@@ -50,6 +50,13 @@ in
             proxyPass = "http://127.0.0.1:3001";
           };
         };
+        "pic.idimitrov.dev" = {
+          enableACME = true;
+          forceSSL = true;
+          locations."/" = {
+            proxyPass = "http://127.0.0.1:8000";
+          };
+        };
         "status.idimitrov.dev" = {
           enableACME = true;
           forceSSL = true;
