@@ -1,5 +1,3 @@
-.PHONY: default all vps update clean
-
 default: all
 
 all: vps
