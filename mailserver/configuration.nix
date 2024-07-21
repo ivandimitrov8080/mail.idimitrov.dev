@@ -23,10 +23,34 @@
   };
 
   networking = {
-    firewall = {
+    firewall = pkgs.lib.mkForce {
       enable = true;
-      allowedTCPPorts = [ 53 80 443 18081 ];
-      allowedUDPPorts = [ 53 51820 18081 ];
+      allowedTCPPorts = [
+        25 # smtp
+        465 # smtps
+        80 # http
+        443 # https
+      ];
+      allowedUDPPorts = [
+        25
+        465
+        80
+        443
+        51820 # wireguard
+      ];
+      extraCommands = ''
+        iptables -N vpn  # create a new chain named vpn
+        iptables -A vpn --src 10.0.0.2 -j ACCEPT  # allow
+        iptables -A vpn --src 10.0.0.3 -j ACCEPT  # allow
+        iptables -A vpn --src 10.0.0.4 -j ACCEPT  # allow
+        iptables -A vpn -j DROP  # drop everyone else
+        iptables -I INPUT -m tcp -p tcp --dport 22 -j vpn
+      '';
+      extraStopCommands = ''
+        iptables -F vpn
+        iptables -D INPUT -m tcp -p tcp --dport 22 -j vpn
+        iptables -X vpn
+      '';
     };
     stevenBlackHosts = {
       enable = true;
