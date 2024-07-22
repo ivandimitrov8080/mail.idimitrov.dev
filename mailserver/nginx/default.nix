@@ -54,6 +54,12 @@ in
           enableACME = true;
           forceSSL = true;
           locations."/" = {
+            root = "/var/pic";
+            extraConfig = ''
+              autoindex on;
+            '';
+          };
+          locations."/*.png" = {
             proxyPass = "http://127.0.0.1:8000";
           };
         };
