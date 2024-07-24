@@ -29,6 +29,9 @@ in
           forceSSL = true;
           locations."/" = {
             root = "${pkgs.webshite}";
+            extraConfig = ''
+              try_files $uri $uri/ $uri.html =404;
+            '';
           };
           extraConfig = webshiteConfig;
         };
@@ -37,6 +40,9 @@ in
           forceSSL = true;
           locations."/" = {
             root = "${pkgs.webshite}";
+            extraConfig = ''
+              try_files $uri $uri/ $uri.html =404;
+            '';
           };
           extraConfig = webshiteConfig;
         };
