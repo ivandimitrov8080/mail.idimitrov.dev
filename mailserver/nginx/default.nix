@@ -17,7 +17,6 @@ in
   services = {
     nginx = {
       enable = true;
-      package = pkgs.angieQuic;
       recommendedGzipSettings = true;
       recommendedOptimisation = true;
       recommendedProxySettings = true;
@@ -67,18 +66,6 @@ in
           };
           locations."/*.png" = {
             proxyPass = "http://127.0.0.1:8000";
-          };
-        };
-        "status.idimitrov.dev" = {
-          enableACME = true;
-          forceSSL = true;
-          root = "${pkgs.angie-console-light}/share/angie-console-light/html";
-          extraConfig = restrictToVpn;
-          locations."/" = { };
-          locations."/api/" = {
-            extraConfig = ''
-              api /status/;
-            '';
           };
         };
       };
