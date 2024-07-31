@@ -12,6 +12,10 @@ let
     allow 10.0.0.4/32;
     deny all;
   '';
+  extensions = [ "html" "txt" "png" "jpg" "jpeg" ];
+  serveStatic = exts: ''
+    try_files $uri $uri/ ${pkgs.lib.strings.concatStringsSep " " (builtins.map (x: "$uri." + "${x}") exts)} =404;
+  '';
 in
 {
   services = {
@@ -28,9 +32,7 @@ in
           forceSSL = true;
           locations."/" = {
             root = "${pkgs.webshite}";
-            extraConfig = ''
-              try_files $uri $uri/ $uri.html $uri.txt =404;
-            '';
+            extraConfig = serveStatic extensions;
           };
           extraConfig = webshiteConfig;
         };
@@ -39,9 +41,7 @@ in
           forceSSL = true;
           locations."/" = {
             root = "${pkgs.webshite}";
-            extraConfig = ''
-              try_files $uri $uri/ $uri.html $uri.txt =404;
-            '';
+            extraConfig = serveStatic extensions;
           };
           extraConfig = webshiteConfig;
         };
@@ -62,14 +62,11 @@ in
             root = "/var/pic";
             extraConfig = ''
               autoindex on;
+              ${serveStatic ["png"]}
             '';
-          };
-          locations."/*.png" = {
-            proxyPass = "http://127.0.0.1:8000";
           };
         };
       };
     };
   };
 }
-
