@@ -75,7 +75,8 @@
   };
 
   environment = {
-    systemPackages = with pkgs; [ nmap coreutils-full fd git vim mlocate busybox bash scripts ];
+    systemPackages = with pkgs; [ nmap uutils-coreutils-noprefix fd git vim mlocate busybox bash scripts ];
+    enableAllTerminfo = true;
   };
 
   services = {
