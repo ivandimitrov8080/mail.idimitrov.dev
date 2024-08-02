@@ -1,7 +1,6 @@
 { pkgs, ... }:
 {
   time.timeZone = "Europe/Prague";
-  system.stateVersion = "23.11";
 
   fileSystems."/mnt/export1981" = {
     device = "172.16.128.47:/nas/5490";
@@ -52,11 +51,6 @@
         iptables -X vpn
       '';
     };
-    stevenBlackHosts = {
-      enable = true;
-      blockFakenews = true;
-      blockGambling = true;
-    };
   };
 
   users = {
@@ -75,7 +69,6 @@
   };
 
   environment = {
-    systemPackages = with pkgs; [ nmap uutils-coreutils-noprefix fd git vim mlocate busybox bash scripts ];
     enableAllTerminfo = true;
   };
 
