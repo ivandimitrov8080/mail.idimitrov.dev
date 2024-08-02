@@ -1318,11 +1318,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1722463010,
-        "narHash": "sha256-zhKB4fMYtR+rAaFtcgEtF8Tldl4297qbeTnawoMHaoM=",
+        "lastModified": 1722595757,
+        "narHash": "sha256-0h6nBsq6/sXZs0nj3dKgLLqZd16Jsu0Y5hNYyT79rJI=",
         "owner": "ivandimitrov8080",
         "repo": "idimitrov.dev",
-        "rev": "b61754dd8f8f5cbc1c722d6f60ccdb4557a320d1",
+        "rev": "b9f26ce32025d63a9389624aee39c328b49c7349",
         "type": "github"
       },
       "original": {
