@@ -31,11 +31,11 @@
         "sal": "sal"
       },
       "locked": {
-        "lastModified": 1722592442,
-        "narHash": "sha256-cq2qg6r23d9Vusj97SqIMIqDIjjfaQUtffOYr3Cisq0=",
+        "lastModified": 1722622293,
+        "narHash": "sha256-Mxw2fVj7Ibr+FjkUBkfzxAcJxNDvOdcx4Mzaq5fvsPU=",
         "owner": "ivandimitrov8080",
         "repo": "configuration.nix",
-        "rev": "09c083c5e4ece1174e0d72f22ca5de9ba7b2fec9",
+        "rev": "c6000ae94fca7bc8069c0e4d756c781844e26403",
         "type": "github"
       },
       "original": {
@@ -1318,11 +1318,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1722595757,
-        "narHash": "sha256-0h6nBsq6/sXZs0nj3dKgLLqZd16Jsu0Y5hNYyT79rJI=",
+        "lastModified": 1722604181,
+        "narHash": "sha256-lbli+H6fgQlVyXX4qtU8SfvncDB+HZOUd53Rj23pyv0=",
         "owner": "ivandimitrov8080",
         "repo": "idimitrov.dev",
-        "rev": "b9f26ce32025d63a9389624aee39c328b49c7349",
+        "rev": "4d1b71bf30bcf24b0ef5e347026d2c5369cad8eb",
         "type": "github"
       },
       "original": {
