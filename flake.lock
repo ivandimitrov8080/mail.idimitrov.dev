@@ -31,11 +31,11 @@
         "sal": "sal"
       },
       "locked": {
-        "lastModified": 1722591479,
-        "narHash": "sha256-FwvNaJFypTT2iwZ+ajYMziT5R+HQ2k1TTSu5XKry1oU=",
+        "lastModified": 1722592442,
+        "narHash": "sha256-cq2qg6r23d9Vusj97SqIMIqDIjjfaQUtffOYr3Cisq0=",
         "owner": "ivandimitrov8080",
         "repo": "configuration.nix",
-        "rev": "91acd7e21615c9b2c87428d93839faecbd8cb5cb",
+        "rev": "09c083c5e4ece1174e0d72f22ca5de9ba7b2fec9",
         "type": "github"
       },
       "original": {
@@ -998,11 +998,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1722221733,
-        "narHash": "sha256-sga9SrrPb+pQJxG1ttJfMPheZvDOxApFfwXCFO0H9xw=",
+        "lastModified": 1722372011,
+        "narHash": "sha256-B2xRiC3NEJy/82ugtareBkRqEkPGpMyjaLxaR8LBxNs=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "12bf09802d77264e441f48e25459c10c93eada2e",
+        "rev": "cf05eeada35e122770c5c14add958790fcfcbef5",
         "type": "github"
       },
       "original": {
