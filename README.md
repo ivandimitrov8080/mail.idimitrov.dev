@@ -1,3 +1,8 @@
+This repo has been merged into https://github.com/ivandimitrov8080/configuration.nix
+
+It is now archived
+
+---
 # My NixOS server config hosting various services
 
 
