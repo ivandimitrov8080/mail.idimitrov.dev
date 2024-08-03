@@ -31,11 +31,11 @@
         "sal": "sal"
       },
       "locked": {
-        "lastModified": 1722622293,
-        "narHash": "sha256-Mxw2fVj7Ibr+FjkUBkfzxAcJxNDvOdcx4Mzaq5fvsPU=",
+        "lastModified": 1722631388,
+        "narHash": "sha256-ljnH69V9wdUUIjRZiCQwi5Wy6+00+YbXRqCGT/NYCc8=",
         "owner": "ivandimitrov8080",
         "repo": "configuration.nix",
-        "rev": "c6000ae94fca7bc8069c0e4d756c781844e26403",
+        "rev": "c09e7674f49553dccb2026acc2265610bb7af8e8",
         "type": "github"
       },
       "original": {
@@ -780,11 +780,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1722388081,
-        "narHash": "sha256-gJkry8rSaaZw+d+frABPgVjqBznCa7Jr3A5YLChSR4o=",
+        "lastModified": 1722625931,
+        "narHash": "sha256-7kdegN29/9T1mD+bSJSfn8G+FbyMC0Bo0TN01PJHPdE=",
         "owner": "StevenBlack",
         "repo": "hosts",
-        "rev": "d6039e35d071480c309363eff2690e8b963ab06a",
+        "rev": "e2ab86e3c7fc4fac942230b6b9c5585813ee34d8",
         "type": "github"
       },
       "original": {
